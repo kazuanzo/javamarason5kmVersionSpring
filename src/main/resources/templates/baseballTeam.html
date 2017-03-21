@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:each="baseballteams:${teams}">
+		<a th:href="@{/baseballteam(id=${baseballteams.id})}"
+		   th:text="${baseballteams.teamName}"></a>
+	</div>
+</body>
+</html>
