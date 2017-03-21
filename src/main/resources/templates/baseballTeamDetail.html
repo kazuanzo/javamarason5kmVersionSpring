@@ -5,13 +5,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-		<div th:each="baseballteam:${team}">
-		<pre th:text="${baseballteam.teamName}"></pre>
-		<pre th:text="${baseballteam.leagueName}"></pre>
-		<pre th:text="${baseballteam.headquarters}"></pre>
-		<pre th:text="${baseballteam.inauguration}"></pre>
-		<pre th:text="${baseballteam.history}"></pre>
-		</div>
-		<a href="/baseball">戻る</a>
+	<div th:each="baseball_team:${team}">
+		<div>球団名</div>  
+		<pre th:text="${baseball_team.teamName}"></pre>
+		<div>本拠地</div>
+		<pre th:text="${baseball_team.headquarters}"></pre>
+		<div>発足</div>
+		<pre th:text="${baseball_team.inauguration}"></pre>
+		<div>歴史</div>
+		<pre th:text="${baseball_team.history}"></pre>
+	</div>
+	<a href="/baseballTeamList">戻る</a>
 </body>
 </html>

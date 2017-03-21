@@ -1,4 +1,4 @@
-package marathon.domain;
+package marathon5km.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

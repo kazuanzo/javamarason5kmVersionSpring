@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>プロ野球</h2>
+	<h2>セントラル・リーグ一覧</h2>
+	<div th:each="baseball_teams:${teams}">
+		<a th:href="@{/baseballteam(id=${baseball_teams.id})}"
+		   th:text="${baseball_teams.teamName}"></a>
+	</div>
+</body>
+</html>

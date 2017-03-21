@@ -1,4 +1,4 @@
-package marathon.app;
+package marathon5km;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

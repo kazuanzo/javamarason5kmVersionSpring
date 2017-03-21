@@ -1,12 +1,12 @@
-package marathon.service;
+package marathon5km.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import marathon.domain.BaseballTeam;
-import marathon.repository.BaseballTeamRepository;
+import marathon5km.domain.BaseballTeam;
+import marathon5km.repository.BaseballTeamRepository;
 
 
 
